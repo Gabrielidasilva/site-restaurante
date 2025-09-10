@@ -1,42 +1,83 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Restaurante Sabor & Arte</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabor & Tradição - Restaurante</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <img src="./image.png">
-  <header>
-    <h1>Restaurante Sabor & Arte</h1>
-    <p>Onde a culinária encontra a criatividade!</p>
-  </header>
+    <header>
+        <div class="logo">
+            <h1>Sabor & Tradição</h1>
+            <p class="slogan">Onde a tradição encontra o sabor!</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#localizacao">Localização</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <section id="menu">
-    <h2>Cardápio</h2>
-    <ul>
-      <li>Risoto de Cogumelos – R$ 38,00</li>
-      <li>Filé Mignon Grelhado com Purê de Batata Doce – R$ 58,00</li>
-      <li>Moqueca de Camarão – R$ 45,00</li>
-      <li>Bruschetta de Tomate e Manjericão – R$ 18,00</li>
-    </ul>
-  </section>
+    <section id="home">
+        <div class="hero">
+            <h2>Bem-vindo ao Sabor & Tradição!</h2>
+            <p>Uma experiência gastronômica única, com pratos tradicionais e sabores autênticos.</p>
+            <img src="assets/images/restaurante.jpg" alt="Restaurante Sabor & Tradição" class="hero-image">
+        </div>
+    </section>
 
-  <section id="localizacao">
-    <h2>Localização</h2>
-    <p>Rua das Flores, 123 - Bairro Jardim, São Paulo - SP</p>
-  </section>
+    <section id="menu">
+        <h2>Nosso Menu</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="assets/images/feijoada.jpg" alt="Feijoada" class="menu-image">
+                <h3>Feijoada Completa</h3>
+                <p>Tradicional feijoada com arroz, farofa, couve e laranja.</p>
+                <span>R$ 45,00</span>
+            </div>
+            <div class="menu-item">
+                <img src="assets/images/churrasco.jpg" alt="Churrasco" class="menu-image">
+                <h3>Churrasco Gaúcho</h3>
+                <p>Cortes selecionados de carne assados na brasa, acompanhados de arroz e salada.</p>
+                <span>R$ 60,00</span>
+            </div>
+            <div class="menu-item">
+                <img src="assets/images/moqueca.jpg" alt="Moqueca Baiana" class="menu-image">
+                <h3>Moqueca Baiana</h3>
+                <p>Peixe fresco cozido com leite de coco, azeite de dendê e pimentões.</p>
+                <span>R$ 50,00</span>
+            </div>
+        </div>
+    </section>
 
-  <section id="contato">
-    <h2>Contato</h2>
-    <p>Telefone: (42) 99832-4576</p>
-    <p>Email: contato@saborearte.com.br</p>
-  </section>
+    <section id="localizacao">
+        <h2>Onde Estamos?</h2>
+        <p>Visite-nos em nosso endereço central, em um ambiente aconchegante e acolhedor.</p>
+        <p><strong>Endereço:</strong> Rua dos Sabores, 123, Centro - São Paulo, SP</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.944487453644!2d-46.63020418440598!3d-23.548943868247937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c11b78801f%3A0x804fd5c6c85fbe4e!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001300-000!5e0!3m2!1spt-BR!2sbr!4v1635446748043!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
 
-  <footer>
-    <p>© 2025 Restaurante Sabor & Arte</p>
-  </footer>
+    <section id="contato">
+        <h2>Entre em Contato</h2>
+        <form action="#" method="POST">
+            <label for="nome">Seu Nome:</label>
+            <input type="text" id="nome" name="nome" required>
 
+            <label for="email">Seu E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Sua Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Sabor & Tradição - Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
