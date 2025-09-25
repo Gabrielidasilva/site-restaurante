@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+:root{
+    --fonte-principal:'Bungee & display';
+}
 * {
   margin: 0;
   padding: 0;
